@@ -1,38 +1,122 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+html body {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.hero {
+  visibility: hidden;
+  height: 100vh;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.hero .container {
+  width: 1440px;
+  min-width: 1440px;
+  margin: 0 auto;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.hero .container .hero-inner {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 24px;
+  height: 100vh;
+}
+.hero .container .hero-inner .hero-content {
+  width: 50%;
+}
+.hero .container .hero-inner .hero-content .hero-content-inner {
+  width: 400px;
+  margin: 0 auto;
+  color: #323232;
+}
+.hero .container .hero-inner .hero-content .hero-content-inner .hero-content-line-inner h1 {
+  font-weight: 500;
+  font-size: 32px;
+  margin-bottom: 24px;
+}
+.hero .container .hero-inner .hero-content .hero-content-inner .hero-content-line-inner h1 .hero-content-line {
+  margin: 0;
+  height: 44px;
+  overflow: hidden;
+}
+.hero .container .hero-inner .hero-content .hero-content-inner .hero-content-line-inner p {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 300;
+  padding-right: 48px;
+  margin-bottom: 56px;
+}
+.hero .container .hero-inner .hero-content .hero-content-inner .btn-arrow {
+  position: relative;
+  margin-top: 3rem;
+}
+.hero .container .hero-inner .hero-content .hero-content-inner .btn-arrow:before {
+  position: absolute;
+  content: "";
+  width: 56px;
+  height: 1px;
+  background-color: #dfdfdf;
+  top: 50%;
+  left: -68px;
+}
+.hero .container .hero-inner .hero-content .hero-content-inner .btn-arrow button.explore-button {
+  background: transparent;
+  border: none;
+  font-size: 12px;
+  padding: 0;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.7px;
+  display: flex;
+  align-items: center;
+}
+.hero .container .hero-inner .hero-content .hero-content-inner .btn-arrow button.explore-button:focus {
+  outline: none;
+}
+.hero .container .hero-inner .hero-content .hero-content-inner .btn-arrow button.explore-button .arrow-icon {
+  position: absolute;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background: #007fff;
+  height: 42px;
+  width: 42px;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+  left: 80px;
+}
+.hero .container .hero-inner .hero-images {
+  width: 50%;
+  height: 100vh;
+  position: relative;
+}
+.hero .container .hero-inner .hero-images .hero-images-inner .hero-images {
+  position: absolute;
+  overflow: hidden;
+}
+.hero .container .hero-inner .hero-images .hero-images-inner .hero-images.girl {
+  top: 0;
+  right: 0;
+  width: 45%;
+  height: 50%;
+}
+.hero .container .hero-inner .hero-images .hero-images-inner .hero-images.boy {
+  bottom: 24px;
+  left: 0px;
+  width: 52%;
+  height: 65%;
+}
+.hero .container .hero-inner .hero-images .hero-images-inner .hero-images img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/*# sourceMappingURL=App.css.map */
